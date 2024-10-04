@@ -25,7 +25,7 @@ const Login: React.FC = () => {
 
       if (response.status === 200) {
         console.log("Login successful:", response.data);
-        navigate("/userdashboard");
+        navigate("/dashboard");
       }
     } catch (error) {
       console.error("Login failed:", error);
