@@ -1,77 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   padding: 80px;
   display: flex;
   align-items: center;
-
-  img {
-    max-width: 100%;
-    height: auto;
-  }
+  justify-content: space-between;
 }
+
+.container img {
+  max-width: 100%;
+  height: auto;
+}
+
 .loginPic {
   display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
 
-  img {
-    max-width: 100%;
-    justify-content: left;
-    margin-top: 50px;
-  }
+.loginPic img {
+  max-width: 100%;
 }
 
 .welcome {
   display: flex;
-  margin-left: 50px;
-  margin-bottom: -95px;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   flex: 1;
+  margin-left: 50px;
+  margin-bottom: -95px;
+}
 
-  h1 {
-    margin: 2px;
-    color: #213f7d;
-    font-size: 2rem;
+.welcome h1 {
+  margin: 2px;
+  color: #213f7d;
+  font-size: 2rem;
+}
+
+.welcome p {
+  color: #777;
+}
+
+.welcome h5 {
+  color: #39cdcc;
+  margin-bottom: 2px;
+}
+
+.input {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.inputContainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.toggleIcon {
+  margin-left: -40px;
+  cursor: pointer;
+  color: #39cdcc;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #39cdcc;
+  color: white;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 728px) {
+  .container {
+    flex-direction: column;
+    padding: 20px;
   }
 
-  p {
-    color: #777;
-  }
-  h5 {
-    color: #39cdcc;
-    margin-bottom: 2px;
-  }
-
-  .input {
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    width: 240%;
-  }
-  .inputContainer {
-    align-items: center;
-    display: flex;
-    width: 73%;
-  }
-
-  .toggle-icon {
-    margin-right: 10px;
-    cursor: pointer;
-    transform: translateX(-180%);
-  }
-
-  .btn {
+  .loginPic {
     margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #39cdcc;
-    color: white;
-    width: 68%;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+  }
 
-    &:hover {
-      background-color: darken(#39cdcc, 10%);
-    }
+  .welcome {
+    margin-left: 0;
+    margin-bottom: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .welcome h1 {
+    font-size: 1.5rem;
+  }
+
+  .inputContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .toggleIcon {
+    margin-left: 0;
+    margin-top: 10px;
   }
 }
