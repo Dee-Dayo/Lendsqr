@@ -1,10 +1,15 @@
 import './App.scss';
-import {useRoutes} from "react-router-dom";
-import {ROUTES} from "./routes";
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import LogIn from "./pages/Auth/Login/login";
 
 function App() {
   return (
-      useRoutes(ROUTES)
+     <Router>
+       <Routes>
+         <Route path="/" element={<Navigate to="/login" />} />
+         <Route path="/login" element={<LogIn/>}/>
+       </Routes>
+     </Router>
   );
 }
 
