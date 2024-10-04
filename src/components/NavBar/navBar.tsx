@@ -1,8 +1,8 @@
 import React from "react";
-import logo from '../../assets/logo.svg'
-import searchIcon from '../../assets/search.png'
-import bell from '../../assets/bell.png'
-import profilePic from '../../assets/profile.png'
+import logo from '../../assets/logo.svg';
+import searchIcon from '../../assets/search.png';
+import bell from '../../assets/bell.png';
+import profilePic from '../../assets/profile.png';
 import style from './navbar.module.scss';
 
 const NavBar: React.FC = () => {
